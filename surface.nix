@@ -3,6 +3,7 @@
   imports = [
     ./surface-dtx-daemon-options.nix
   ];
+  networking.hostId = "11111111";
 
   nixpkgs.overlays = [(self: super: {
     libinput = super.callPackage ./libinput-1.15.0.nix {};
